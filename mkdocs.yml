@@ -1,5 +1,5 @@
 site_name: RakStar
 nav:
-  - Home: index.md
-  - About: about.md
-theme: readthedocs
+  - Introdução: index.md
+  - Primeiros Passos: getting-started.md
+theme: shadcn
