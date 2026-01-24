@@ -3,3 +3,7 @@ nav:
   - Introdução: index.md
   - Primeiros Passos: getting-started.md
 theme: shadcn
+markdown_extensions:
+  - pymdownx.blocks.tab:
+      alternate_style: true 
+  - codehilite

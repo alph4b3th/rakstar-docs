@@ -10,7 +10,7 @@ RakStar é um framework moderno e opinativo open-source para a linguagem de prog
 
 Pawn é uma linguagem estruturada simples e limitada, tendo poucos recursos para desenvolvimento de sistemas complexos, por mais que o ecossistema envolva diversas bibliotecas feitas pela comunidade. Fazer um GameMode do zero em Pawn implicará diversos problemas ao longo do caminho, sendo o maior deles a produtividade.  
 
-A falta de estrutura de dados simples como `struct` e `map` é lamentável. A necessidade de utilização de arrays como uma gambiarra para struct é um atraso significativo que agrava ainda mais a legibilidade do código. É necessário a criação de enums, que não possuem isolamento como no C. Como consequência, os nomes de variáveis se tornam cada vez maiores, sujando o código.
+A falta de estrutura de dados simples como `struct` e `map` é lamentável. A necessidade de utilização de arrays como uma gambiarra para struct é um atraso significativo que agrava ainda mais a legibilidade do código. É necessário a criação de enums, que não possuem isolamento como no C. Como consequência, os nomes dos membros dos enumeradores e das tags se tornam cada vez maiores, sujando o código.
 
 Desenvolver um GameMode em Pawn significa, majoritariamente, lidar com um ambiente single-thread. Para evitar o bloqueio da execução principal, o que causaria o congelamento do servidor, somos obrigados a confiar tarefas pesadas em callbacks de plugins externos. Essa abordagem traz severos riscos estruturais, pois ao utilizarmos essa estratégia, perdemos o controle sobre o fluxo de execução e introduzimos a possibilidade de condições de corrida ([race conditions](https://en.wikipedia.org/wiki/Race_condition)). 
 
